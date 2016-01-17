@@ -27,7 +27,7 @@ setInterval(function () {
         }
         for (var key in fares) {
             var data = fares[key];
-            if (data.fare <= 2500 ) {
+            if (data.fare <= config.thresold ) {
                 console.log("shooting email.....");
                 shootEmail(data.date, data.fare, data, function (err, message) {
                     console.log(err || message);

@@ -17,5 +17,6 @@ module.exports = {
     },
     notification : {
         user : "email to which notification will be sent"
-    }
+    },
+    thresold : 3000
 }
